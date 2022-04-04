@@ -51,3 +51,18 @@ article h5 {
     font-size: 30px;
     margin-top: 30px;
 }
+
+article {
+    animation-name: fade-in;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }

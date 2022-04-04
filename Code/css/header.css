@@ -48,6 +48,9 @@ myNavbar a {
     color: #fff;
 }
 
+.nav-item active{
+    background-color: rgb(141, 40, 40);
+}
 
 * {
     border: 0;
@@ -205,5 +208,15 @@ input {
 
     nav ul li a {
         font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .drop-down{
+        background-color: rgb(77, 76, 76);
+        margin-top: 25px;
+        margin-right: 25px;
+        border-radius: 5px;
+        padding: 5px;
     }
 }
