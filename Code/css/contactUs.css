@@ -1,7 +1,4 @@
-img{
-    height: 500px;
-    width:fit-content;
-}
+
 body{
     font-family: 'Barlow Semi Condense';
 }
@@ -16,14 +13,18 @@ font-size: xx-large;
     background-image: url("../images/lobby.png");
     color:white; 
     padding-top: 5%;
-    
-    
+    overflow:hidden;
 }   
 .title{
     font-size: 40px;
     font-weight: 600;
     margin-top: 100px;
     font-family: 'Barlow Semi Condensed';
+    padding-left: 50px;
+}
+.top-text
+{
+    padding-left: 50px;
 }
 .play-btn
 {
