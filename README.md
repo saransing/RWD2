@@ -1,7 +1,7 @@
 # RWD2
 This is director for second assignment for RWD 
 
-*Requirements*
+**Requirements**
 Bootstrap 5
 Collapsable Nav
 Bootstrap Carousel for sliding Images
