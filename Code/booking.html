@@ -16,7 +16,7 @@
 
 
     <!--Link to CSS file-->
-    <link href="css/index_styles.css" type="text/css" rel="stylesheet">
+    <link href="css/booking_styles.css" type="text/css" rel="stylesheet">
 
     <!--Link to Footer CSS-->
     <link href="css/footer.css" type="text/css" rel="stylesheet">
@@ -74,79 +74,96 @@
 
 
 
+    <div class="container">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <h2>Check the available rooms:</h2>
+            </div>
+            <div class="col-12 d-flex justify-content-center">
+                <p>Please select number of guests, arrival and departure dates:</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 d-flex justify-content-evenly offset-md-1 bookings">
+                <form action="/action_page.php">
+                    <label for="guest_list">Number of guests:</label>
+                    <select name="guest_list" id="guest_list">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4+">4+</option>
+                    </select>
+            </div>
+            <div class="col-md-3 d-flex justify-content-evenly offset-md-1">
 
-    <div class="bookingContainer">
-        <h2>Check the available rooms:</h2>
-        <br>
-        <p>Please select number of guests, arrival and departure dates:</p>
+                <label for="start">Arrival date:</label>
 
-        <form action="/action_page.php">
-            <label for="guest_list">Number of guests:</label>
-            <select name="guest_list" id="guest_list">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4+">4+</option>
-            </select>
+                <input type="date" id="start" name="trip-start" value="2022-04-06" min="2022-01-01" max="2022-12-31">
 
-            <label for="start">Arrival date:</label>
+            </div>
 
-            <input type="date" id="start" name="trip-start" value="2022-04-06" min="2022-01-01" max="2022-12-31">
+            <div class="col-md-3 d-flex justify-content-evenly offset-md-1">
 
-            <label for="end">Departure date:</label>
+                <label for="end">Departure date:</label>
 
-            <input type="date" id="end" name="trip-start" value="2022-04-07" min="2022-01-01" max="2022-12-31">
+                <input type="date" id="end" name="trip-start" value="2022-04-07" min="2022-01-01" max="2022-12-31">
 
-            <br>
-            <br>
-            <input type="submit" value="Search for open bookings">
-
-        </form>
-        </p>
-        <br>
-
-    </div>
+            </div>
 
 
+            <div class="col-12 d-flex justify-content-center">
+                <input type="submit" value="Search for open bookings">
 
-    <div class="heading bookingContainer">
-        <br>
-        <h2> Available rooms that match your selection: </h2>
-        <br>
 
-        <div class="bookingrooms">
-            <table>
-                <tr>
-                    <td>
-                        <img class="oldPhoto" src="images/singlepersonroom.jpg" alt="logo" title="One bedroom room"
-                            width="300px" />
-                    </td>
-                    <td>
-                        <h2>Single bedroom apartment</h2>
-                        <p>Includes: breakfast, access to swimming pool and gym</p>
-                        <p>The apartment is fully furnitured</p>
-                        <p>Starting from 169$/day</p>
-                    </td>
-                </tr>
-            </table>
+                </form>
+            </div>
+
+
         </div>
 
-        <div class="bookingrooms">
-            <table>
-                <tr>
-                    <td>
-                        <img class="oldPhoto" src="images/two_bedroom.jpg" alt="logo" title="Two bedroom room"
-                            width="300px" />
-                    </td>
-                    <td>
-                        <h2>Two bedroom apartment</h2>
+
+
+        <div class="row">
+            <!-- <div class="heading bookingContainer"> -->
+            <div class="col-12 d-flex justify-content-center">
+                <h2> Available rooms: </h2>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-end">
+            <div class="col-md-6 d-flex">
+                <img class="oldPhoto" src="images/single_bedroom.jpg" alt="logo" title="One bedroom room" width="80%" />
+            </div>
+            <div class="col-md-6 ">
+
+                <h2>Single bedroom apartment</h2>
+                <p>Includes: breakfast, access to swimming pool and gym</p>
+                <p>The apartment is fully furnitured</p>
+                <p>Starting from 169$/day</p>
+                <input type="submit" value="Book now!">
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center bookings">
+            <div class="col-md-6">
+                <img class="oldPhoto" src="images/two_bedroom.jpg" alt="logo" title="Two bedroom room" width="80%" />
+            </div>
+            <div class="col-md-6">
+                <h2>Two bedroom apartment</h2>
+                <ul>
+                    <li>
                         <p>Includes: breakfast, access to swimming pool and gym</p>
+                    </li>
+                    <li>
                         <p>The apartment is fully furnitured</p>
+                    </li>
+                    <li>
                         <p>Starting from 249$/day</p>
-                    </td>
-                </tr>
-            </table>
+                    </li>
+                </ul>
+                <input type="submit" value="Book now!">
+            </div>
         </div>
+        <!-- </div> -->
     </div>
 
     <!--Footer by Saran-->
@@ -185,7 +202,7 @@
                 </div>
             </div>
             <div class="d-flex justify-content-between py-1 my-4  mb-0 pb-0 border-top footerBottom">
-                <p>&copy; 2021 Company, Inc. All rights reserved.</p>
+                <p>&copy; 2022 Company, Inc. All rights reserved.</p>
         </footer>
     </div>
     <!--Footer ends-->
