@@ -1,8 +1,8 @@
 /**Saran**/
 
 body {
-    background-color:rgb(240, 234, 234);
-     }
+    background-color: rgb(240, 234, 234);
+}
 
 
 img {
@@ -10,39 +10,41 @@ img {
     padding: 5px;
     float: left;
 }
-img:hover {opacity: 0.7;}
+
+img:hover {
+    opacity: 0.7;
+}
 
 .flex-container {
     display: flex;
     flex-wrap: wrap;
     align-self: center;
     justify-content: space-evenly;
-  }
+}
 
 
 
-.mainContainer{
-margin-left: 5%;
+.mainContainer {
+    margin-left: 5%;
 }
 
 .imgmain {
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }
+}
 
 
 
-.middleContainer{
-    width: 300px;
+.middleContainer {
     height: 400px;
-    background-color:white;
+    background-color: white;
     border-radius: 3%;
     float: left;
     font-weight: lighter;
     font-family: Arial Narrow, Arial, sans-serif;
     font-size: 15px;
-    color:#596aa7;
+    color: #596aa7;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     overflow: auto;
@@ -50,8 +52,7 @@ margin-left: 5%;
 }
 
 
-.rightContainer{
-    width: 300px;
+.rightContainer {
     height: 400px;
     background-color: white;
 
@@ -61,13 +62,12 @@ margin-left: 5%;
     font-weight: lighter;
     font-family: Arial Narrow, Arial, sans-serif;
     font-size: 15px;
-    color:#596aa7;
+    color: #596aa7;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    overflow: auto;  
-} 
+    overflow: auto;
+}
 
-.rightContainer2{
-    width: 300px;
+.rightContainer2 {
     height: 400px;
     background-color: white;
     margin-bottom: 20px;
@@ -77,11 +77,8 @@ margin-left: 5%;
     font-weight: lighter;
     font-family: Arial Narrow, Arial, sans-serif;
     font-size: 15px;
-    color:#596aa7;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+    color: #596aa7;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     overflow: auto;
-    clear: right; 
-} 
-
-
-
+    clear: right;
+}
