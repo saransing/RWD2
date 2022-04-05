@@ -1,3 +1,4 @@
+/* Adrian */
 body {
     background-color: rgb(240, 234, 234);
 }
@@ -39,6 +40,7 @@ img:hover {
     margin-top: 5px;
     float: left;
     border-radius: 10%;
+    overflow: auto;
 }
 
 
@@ -84,13 +86,11 @@ img:hover {
 
 /* To decrease scrolling on mobile */
 @media only screen and (max-width: 768px) {
-    .bookingrooms {
+    .oldPhoto {
         width: 100%;
     }
 
-    .img {
-        width: auto;
-    }
+
 
 
 }

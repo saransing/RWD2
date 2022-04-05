@@ -24,7 +24,7 @@
 </head>
 
 <body>
-    <!--Filip's header-->
+    <!--Filips header-->
     <div class="nav-font">
         <nav class="navbar navbar-expand-md bg-light navbar-dark">
             <a class="navbar-brand" href="#">
@@ -33,8 +33,8 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse justify-content-end" id="myNavbar">
-                <ul class="navbar-nav">
+            <divg class="collapse navbar-collapse justify-content-end" id="myNavbar">
+                <ul class="navbar-nav drop-down">
                     <li id="search-bar nav-item active">
                         <form action="" class="search-bar">
                             <input type="search" name="search" pattern=".*\S.*" required />
@@ -62,15 +62,9 @@
                     </li>
 
                 </ul>
-            </div>
-        </nav>
+
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-        </script>
-
-    <!--End of header-->
+    <!--Header ends-->
 
 
 
@@ -83,38 +77,37 @@
                 <p>Please select number of guests, arrival and departure dates:</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-3 d-flex justify-content-evenly offset-md-1 bookings">
+        <div class="row d-flex justify-content-center align-items-end m-2">
+            <!-- flexbox here-->
+            <div class="col-md-2 d-flex justify-content-center">
                 <form action="/action_page.php">
                     <label for="guest_list">Number of guests:</label>
-                    <select name="guest_list" id="guest_list">
+                    <br>
+                    <select class="w-100" name="guest_list" id="guest_list">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4+">4+</option>
                     </select>
             </div>
-            <div class="col-md-3 d-flex justify-content-evenly offset-md-1">
+            <div class="col-md-2 d-flex justify-content-center">
 
                 <label for="start">Arrival date:</label>
-
                 <input type="date" id="start" name="trip-start" value="2022-04-06" min="2022-01-01" max="2022-12-31">
 
             </div>
 
-            <div class="col-md-3 d-flex justify-content-evenly offset-md-1">
+            <div class="col-md-2 d-flex justify-content-center">
 
                 <label for="end">Departure date:</label>
-
+                <br>
                 <input type="date" id="end" name="trip-start" value="2022-04-07" min="2022-01-01" max="2022-12-31">
 
             </div>
 
 
-            <div class="col-12 d-flex justify-content-center">
-                <input type="submit" value="Search for open bookings">
-
-
+            <div class="col-md-1 d-flex justify-content-center align-self-center">
+                <input class="btn btn-primary" type="submit" value="Search">
                 </form>
             </div>
 
@@ -129,26 +122,33 @@
                 <h2> Available rooms: </h2>
             </div>
         </div>
-        <div class="row d-flex justify-content-end">
-            <div class="col-md-6 d-flex">
-                <img class="oldPhoto" src="images/single_bedroom.jpg" alt="logo" title="One bedroom room" width="80%" />
+        <div class="row d-flex justify-content-end text-center text-md-start ">
+            <div class="col-md-6 d-flex justify-content-center">
+                <img class="oldPhoto" src="images/single_bedroom.jpg" alt="logo" title="One bedroom room" />
             </div>
             <div class="col-md-6 ">
-
-                <h2>Single bedroom apartment</h2>
-                <p>Includes: breakfast, access to swimming pool and gym</p>
-                <p>The apartment is fully furnitured</p>
-                <p>Starting from 169$/day</p>
-                <input type="submit" value="Book now!">
+                <h2 class="mt-md-5">Single bedroom apartment</h2>
+                <ul>
+                    <li>
+                        <p>Includes: breakfast, access to swimming pool and gym</p>
+                    </li>
+                    <li>
+                        <p>The apartment is fully furnitured</p>
+                    </li>
+                    <li>
+                        <p>Starting from 169$/day</p>
+                    </li>
+                </ul>
+                <input class="btn btn-primary" type="submit" value="Book now!">
             </div>
         </div>
 
-        <div class="row d-flex justify-content-center bookings">
-            <div class="col-md-6">
-                <img class="oldPhoto" src="images/two_bedroom.jpg" alt="logo" title="Two bedroom room" width="80%" />
+        <div class="row d-flex justify-content-end text-center text-md-start">
+            <div class="col-md-6 d-flex justify-content-center">
+                <img class="oldPhoto" src="images/two_bedroom.jpg" alt="logo" title="Two bedroom room" />
             </div>
-            <div class="col-md-6">
-                <h2>Two bedroom apartment</h2>
+            <div class="col-md-6 ">
+                <h2 class="mt-md-5">Two bedroom apartment</h2>
                 <ul>
                     <li>
                         <p>Includes: breakfast, access to swimming pool and gym</p>
@@ -160,7 +160,7 @@
                         <p>Starting from 249$/day</p>
                     </li>
                 </ul>
-                <input type="submit" value="Book now!">
+                <input class="btn btn-primary" type="submit" value="Book now!">
             </div>
         </div>
         <!-- </div> -->
