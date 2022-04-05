@@ -82,3 +82,17 @@ img:hover {
     overflow: auto;
     clear: right;
 }
+
+@media only screen and (max-width: 768px) {
+    .middleContainer {
+        height: fit-content;
+    }
+
+    .rightContainer {
+        height: fit-content;
+    }
+
+    .rightContainer2 {
+        height: fit-content;
+    }
+}
