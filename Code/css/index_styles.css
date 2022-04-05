@@ -1,4 +1,4 @@
-/**Saran**/
+/**Adrian**/
 
 body {
     background-color: rgb(240, 234, 234);
@@ -83,6 +83,7 @@ img:hover {
     clear: right;
 }
 
+/* To decrease scrolling on mobile */
 @media only screen and (max-width: 768px) {
     .middleContainer {
         height: fit-content;

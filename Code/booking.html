@@ -91,11 +91,11 @@
 
             <label for="start">Arrival date:</label>
 
-            <input type="date" id="start" name="trip-start" value="2022-03-14" min="2022-01-01" max="2022-12-31">
+            <input type="date" id="start" name="trip-start" value="2022-04-06" min="2022-01-01" max="2022-12-31">
 
             <label for="end">Departure date:</label>
 
-            <input type="date" id="end" name="trip-start" value="2022-03-15" min="2022-01-01" max="2022-12-31">
+            <input type="date" id="end" name="trip-start" value="2022-04-07" min="2022-01-01" max="2022-12-31">
 
             <br>
             <br>
@@ -149,40 +149,46 @@
         </div>
     </div>
 
-    <div class="footer-container">
-        <div class="footer">
-            <div class="footer-heading-AboutUs">
-                <h2>About us</h2>
-                <ul>
-                    <li><a href="aboutUs.html">Blog</a></li>
-                    <li><a href="aboutUs.html">Guests</a></li>
-                    <li><a href="aboutUs.html">Meet Our Staff</a></li>
-                    <li><a href="aboutUs.html">About Hotel</a></li>
-                </ul>
-            </div>
+    <!--Footer by Saran-->
+    <div class="container-fluid">
+        <footer class="py-4">
+            <div class="row d-flex justify-content-evenly">
+                <div class="col-lg-2 col-sm-6">
+                    <img src="images/overlook-footer.jpeg" class="d-block w-100" alt="Pool Photo">
+                </div>
 
-            <div class="footer-heading-socialmedia">
-                <h2 class="foot_right">Social Media</h2>
-                <ul>
-                    <li>
-                        <a href="https://www.instagram.com/" class="fa fa-instagram">&ensp;Instagram</a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/" class="fa fa-facebook">&ensp;Faceebook</a>
-                    </li>
-                    <li>
-                        <a href="https://dk.linkedin.com/" class="fa fa-linkedin">&ensp;LinkedIn</a>
-                    </li>
-                </ul>
+                <div class="col-lg-2">
+                    <h5>Overlook Hotel</h5>
+                    <p class="nav flex-column">
+                        Østre Strandvej 33A 9990<br>
+                        Skagen, Denmark<br>
+                        Tel: 40 30 36 36
+                    </p>
+                </div>
+                <!--Links to Social Media-->
+                <div class="col-lg-4 d-flex justify-content-center">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook fa-3x p-2"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-3x p-2"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube fa-3x p-2"></i></a>
+                </div>
+                <!--Link to newsletter-->
+                <div class="col-lg-4">
+                    <form>
+                        <h5>Subscribe to our newsletter</h5>
+                        <p>Monthly digest of whats new and exciting from us.</p>
+                        <div class="d-flex w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="footer-email-form">
-                <h2>Join our newsletter</h2>
-                <input type="email" placeholder="Enter your email adress" id="footer-email" />
-                <input type="submit" value="Sign Up" id="footer-email-btn" />
-            </div>
-            <p1>All rights reserved ® OverlookHotel.com</p1>
-        </div>
+            <div class="d-flex justify-content-between py-1 my-4  mb-0 pb-0 border-top footerBottom">
+                <p>&copy; 2021 Company, Inc. All rights reserved.</p>
+        </footer>
     </div>
+    <!--Footer ends-->
 
 </body>
 
